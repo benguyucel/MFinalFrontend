@@ -24,6 +24,7 @@
       <td>{{ product.categoryId }}</td>
       <td>{{ product.unitPrice | vatAdded: 10 | currency }}</td>
       <td>{{ product.unitPrice }}</td>
+      <td><button type="button" (click)="addToCart(product)" class="btn btn-success">Sepete Ekle</button></td>
     </tr>
   </tbody>
 </table>
